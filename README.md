@@ -154,47 +154,6 @@ gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
     - unzip `train.de.gz`, `val.de.gz`, `test_2017_flickr.de.gz`, `test_2018_flickr.de.gz` in `./datasets/multi30k-dataset/data/task1/raw/`
 - For manual feature extraction, please checkout [./feature_extraction](./feature_extraction)
 
-## Pretraining on COCO+VG
-```bash
-# Pretraining with 4 gpus
-cd VL-T5/
-bash scripts/COCOVG_pretrain_VLT5.sh 4
-bash scripts/COCOVG_pretrain_VLBart.sh 4
-```
-
-## Downstream tasks
-
-### [VQA](https://visualqa.org/)
-```bash
-# Finetuning with 4 gpus
-cd VL-T5/
-bash scripts/VQA_VLT5.sh 4
-bash scripts/VQA_VLBart.sh 4
-```
-
-### [GQA](https://cs.stanford.edu/people/dorarad/gqa/)
-```bash
-# Finetuning with 4 gpus
-cd VL-T5/
-bash scripts/GQA_VLT5.sh 4
-bash scripts/GQA_VLBart.sh 4
-```
-
-### [NLVR2](http://lil.nlp.cornell.edu/nlvr/)
-```bash
-# Finetuning with 4 gpus
-cd VL-T5/
-bash scripts/NLVR_VLT5.sh 4
-bash scripts/NLVR_VLBart.sh 4
-```
-
-### [RefCOCOg](https://github.com/mjhucla/Google_Refexp_toolbox)
-```bash
-# Finetuning with 4 gpus
-cd VL-T5/
-bash scripts/RefCOCOg_VLT5.sh 4
-bash scripts/RefCOCOG_VLBart.sh 4
-```
 
 ### [VCR](https://visualcommonsense.com/)
 ```bash
@@ -203,18 +162,7 @@ cd RIE-Net/
 bash scripts/VCR_RIE-Net.sh 1
 ```
 
-### [COCO Caption](https://cocodataset.org/)
-```bash
-# Finetuning with 4 gpus
-cd VL-T5/
-bash scripts/COCOCaption_VLT5.sh 4
-bash scripts/COCOCaption_VLBart.sh 4
-```
 
-### [Multi30K](https://github.com/multi30k/dataset)
-```bash
-# Finetuning with 4 gpus
-cd VL-T5/
 bash scripts/Multi30K_VLT5.sh 4
 bash scripts/Multi30K_VLBart.sh 4
 ```
