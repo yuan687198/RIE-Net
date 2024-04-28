@@ -161,9 +161,3 @@ gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
 cd RIE-Net/
 bash scripts/VCR_RIE-Net.sh 1
 ```
-
-
-bash scripts/Multi30K_VLT5.sh 4
-bash scripts/Multi30K_VLBart.sh 4
-```
-
