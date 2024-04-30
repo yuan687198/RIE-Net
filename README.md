@@ -161,3 +161,6 @@ gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
 cd RIE-Net/
 bash scripts/VCR_RIE-Net.sh 1
 ```
+
+## Test checkpoint
+https://pan.baidu.com/s/1UGdSrVz46rCnTlMfa2-OKQ (code:k38r)
