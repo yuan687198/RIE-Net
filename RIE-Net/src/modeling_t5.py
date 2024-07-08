@@ -2,7 +2,7 @@ from dataclasses import dataclass
 
 from ymodeling_t5 import (
     T5Stack, T5Block, T5LayerNorm, T5LayerSelfAttention, T5LayerFF, T5LayerCrossAttention,
-    T5PreTrainedModel, T5ForConditionalGeneration                         #/home/yuan/anaconda3/envs/vlt5/lib/python3.7/site-packages/transformers/models/t5/modeling_t5.py
+    T5PreTrainedModel, T5ForConditionalGeneration                       
 )
 
 import torch
@@ -166,7 +166,7 @@ class JointEncoder(T5Stack):
         self.memory_cap = torch.nn.Linear(in_features=66, out_features=10)
         self.memory_cap_relation = torch.nn.Linear(in_features=36*36, out_features=10)
         
-        self.memoryslot = torch.nn.Parameter(torch.randn(64, 10, 768))     #64=16(batchsize)*4, 20:memory_slot          12*4=48
+        self.memoryslot = torch.nn.Parameter(torch.randn(64, 10, 768))    
         self.memory_a = torch.nn.Linear(in_features=768, out_features=1)
         self.relation_embedding = torch.nn.Linear(in_features=768*2, out_features=768)
         
