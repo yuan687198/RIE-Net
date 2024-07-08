@@ -157,7 +157,7 @@ gdrive download 1MBBhlkP83VMKS2Qe0SmFfzkHhMpIG5wf --recursive
 
 ### [VCR](https://visualcommonsense.com/)
 ```bash
-# Finetuning with 1 gpus
+# Finetuning with 1 gpu
 cd RIE-Net/
 bash scripts/VCR_RIE-Net.sh 1
 ```
