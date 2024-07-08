@@ -183,7 +183,7 @@ class VLT5VCR(VLT5):
 
                 result['qar_pred'] = rationale_id.long().cpu().numpy()
 
-        loss = 1*qa_loss + 1*qar_loss + 1* qa_cap_loss
+        loss = 1*qa_loss + 1*qar_loss + 3* qa_cap_loss
 
         result['loss'] = loss
         result['qa_loss'] = qa_loss.detach()
